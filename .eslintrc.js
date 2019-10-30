@@ -25,10 +25,7 @@ module.exports = {
         "arrow-spacing": [
             "error", { "before": true, "after": true }
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
+        "linebreak-style": 0,
         "quotes": [
             "error",
             "double"

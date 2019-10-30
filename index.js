@@ -1,4 +1,15 @@
-require("dotenv").config()
+/*const app = require('./app') // varsinainen Express-sovellus
+const http = require('http')
+const config = require('./utils/config')
+
+const server = http.createServer(app)
+
+server.listen(config.PORT, () => {
+  console.log(`Server running on port ${config.PORT}`)
+}) */
+
+
+/*require("dotenv").config()
 const express = require("express")
 const app = express()
 const cors = require("cors")
@@ -118,4 +129,14 @@ app.use(errorHandler)
 const PORT = process.env.PORT
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
+})*/
+
+const app = require("./app")
+const http = require("http")
+const config = require("./utils/config")
+
+const server = http.createServer(app)
+
+server.listen(config.PORT, () => {
+    console.log(`Server running on port ${config.PORT}`)
 })
